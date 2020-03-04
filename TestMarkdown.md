@@ -1,4 +1,4 @@
-**bold** ctrl+b
+**bold** ctrl+b  
 *italic*
 - one
 - two
