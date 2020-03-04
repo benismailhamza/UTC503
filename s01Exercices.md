@@ -1,5 +1,11 @@
+
+
 ## UTC503 Exercice 1
 ***
+
+[Page notion.so](https://www.notion.so/alexandremoro/01-Introduction-1f4417afe6b247ce97443d999acb51be)
+
+
   
 ### Familiarisez-vous avec les notions suivantes :
 
@@ -64,5 +70,7 @@ http://dictionnaire.sensagent.leparisien.fr/Module%20(programmation)/fr-fr/
 
 >Un module désigne originellement un fichier de code de programmation ou un fichier de librairie statique ou dynamique.
 Pour reprendre l'image de la programmation objet, un module est une instance unique qui n'utilise pas d'héritage et ne contient aucun module fils. Chaque module peut exporter ou importer certains symboles comme des variables, des fonctions ou des classes. Les modules peuvent se regrouper en package (espace de noms) éventuellement hiérarchique.
+
+
 
 
