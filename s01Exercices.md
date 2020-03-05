@@ -151,6 +151,7 @@ En programmation orientée objet, on utilise parfois le terme spécifique d'invo
     Impératif
 * Logo  
     Orienté objet
+    >Note: Je ne me souviens pas avoir fait d'objet sur MO5/TO7 :D
 * CSS  
     Ce n'est pas un langage (???)
 
@@ -188,7 +189,7 @@ La commande ```tsc --version``` renvoi la version installée sur le système
 alexandremoro@alex-pop-os:~/Cnam$ tsc --version
 Version 3.8.3
 ```
-Une autre solution est d'installer le compilateur TypeScript localement dans le projet  ```npm install --save-dev typescript``` afin de ne pas interférer d'autres projets TypeScript.  
+Une autre solution est d'installer le compilateur TypeScript localement dans le projet  ```npm install --save-dev typescript``` afin de ne pas interférer avec d'autres projets TypeScript.  
 
 ![Screenshot](https://i.imgur.com/5dfWfBg.png)
 
