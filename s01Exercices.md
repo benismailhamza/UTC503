@@ -217,6 +217,7 @@ Copyright (C) 1999-2013 Daniel Diaz
 compiling /home/cg/root/3884193/main.pg for byte code...
 /home/cg/root/3884193/main.pg compiled, 2 lines read - 299 bytes written, 7 ms
 Hello World!| ?- 
+
 * Smalltalk  
 ```Smalltalk
 Transcript show: 'Hello, world!'.
@@ -226,4 +227,42 @@ Hello, world!
 
 ![](https://choualbox.com/Img/138183061693.jpg)
 
+* Python 3
+  
+```Python
+\# Hello World program in Python
+print ("Hello World!");
+```
+>$python3 main.py  
+Hello World!
 
+* java
+```Java
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+     }
+}
+```
+>**\$javac HelloWorld.java  
+$java -Xmx128M -Xms16M HelloWorld**  
+Hello World
+
+* C#
+```C#
+using System.IO;
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello, World!");
+    }
+}
+```
+>**\$mcs \*.cs -out:  
+main.exe  
+\$mono main.exe**  
+Hello, World!
