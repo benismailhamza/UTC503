@@ -8,7 +8,7 @@
 
   
 ### Familiarisez-vous avec les notions suivantes :
-
+---
 **Instruction:**
 
 >Une instruction informatique désigne une étape dans un programme informatique. Une instruction dicte à l'ordinateur l'action nécessaire qu'il doit effectuer avant de passer à l'instruction suivante. Un programme informatique est constitué d'une suite d'instructions.  
@@ -71,6 +71,159 @@ http://dictionnaire.sensagent.leparisien.fr/Module%20(programmation)/fr-fr/
 >Un module désigne originellement un fichier de code de programmation ou un fichier de librairie statique ou dynamique.
 Pour reprendre l'image de la programmation objet, un module est une instance unique qui n'utilise pas d'héritage et ne contient aucun module fils. Chaque module peut exporter ou importer certains symboles comme des variables, des fonctions ou des classes. Les modules peuvent se regrouper en package (espace de noms) éventuellement hiérarchique.
 
+**import de module:**
 
+http://www.xavierdupre.fr/app/teachpyx/helpsphinx/c_module/module.html
+
+>Il est souvent préférable de répartir le code d’un grand programme sur plusieurs fichiers. Parmi tous ces fichiers, un seul est considéré comme fichier principal, il contient son point d’entrée, les premières instructions exécutées. Les autres fichiers sont considérés comme des modules, en quelque sorte, des annexes qui contiennent tout ce dont le fichier principal a besoin.
+
+**commentaire:**
+
+>Les commentaires sont, en programmation informatique, des portions du code source ignorées par le compilateur ou l’interpréteur, car destinées en général à un lecteur humain et non censées influencer l’exécution du programme.  
+Les commentaires sont le plus souvent utilisés pour expliquer le code ; certains outils, appelés générateurs de documentation, permettent d’extraire l’information disponible dans les commentaires pour créer automatiquement une documentation du programme.
+On utilise parfois une mise en commentaires pour court-circuiter quelque temps une section de code, mais aussi pour préciser des contraintes ou des propriétés, notamment des préconditions, des postconditions et des invariants comme cela se fait dans la programmation par contrat.
+
+### Quelles différences faites-vous entre définition et déclaration ?
+
+http://public.iutenligne.net/informatique/algorithme-et-programmation/priou/LangageC/93_premier_avertissement__dclaration__dfinition_de_fonction.html
+
+>Déclarer une fonction, sous la forme d'un prototype : c'est la traduction en Langage C du dessin du bloc fonctionnel. Ce mode d'emploi de la fonction est destiné au programmeur humain et au compilateur.
+
+* Exemple
+```C
+double calculer_delta(double a,double b,double c);
+```
+>Définir une fonction : beaucoup plus complète que la déclaration qu'elle reprend dans sa ligne d'en‐tête, la définition donne la suite des instructions qui composent la fonction, c'est‐à‐dire le code interne de la fonction.
+
+```C
+double = calculer_dela( double a, double b, double c ) {
+    return ( b*b - 4.*a*c ) ;
+}
+```
+https://fr.wikipedia.org/wiki/D%C3%A9claration_(informatique)
+
+En programmation informatique, la déclaration permet d'indiquer au compilateur l'existence d'une entité informatique (variable, routine, etc.) , en spécifiant:  
+
+* Son identifiant
+* Son type de données (dans le cas d'un langage typé)
+* Les paramètres (Identifiant et Type)
+
+>Avec certains langages de programmation, notamment le langage C/C++, il est nécessaire de déclarer les entités informatiques avant de pouvoir les utiliser.
+
+Il faut bien différencier la déclaration et la définition. Alors que la déclaration ne fait qu'indiquer l'existence d'une entité informatique sans la créer, la définition l'instancie, c'est-à-dire qu'elle la crée. Par exemple, l'implémentation d'une routine est sa définition.
+
+### Quelles différences faites-vous entre procédures, fonctions, méthodes ?
+---
+**Procédures :**
+
+>Une procédure est un bout de code qui a un nom et qui peut être appelé depuis le reste du programme. En java, une procédure est forcément déclarée dans une classe. Dans sa forme la plus simple, elles’exprime ainsi:
+
+```Java
+public static voidnomDeLaProcédure() {
+// Corps de la procédure...}
+}
+```
+
+**Fonctions :**
+
+Une fonction ressemble à une procédure, mais sa pour tâche est de renvoyer une valeur, qui sera utilisée par la suite. L’exemple le plus immédiat, ce sont les fonctions mathématiques. La fonction cos, de la classe Math, calcule ainsi le cosinus de son argument. On l’utilise de la manière suivante :
+
+```Java
+double x= 3;double y= Math.cos(x/2);
+```
+> ! La grande différence entre procédures et fonctions est doncque ces dernières renvoient quelquechose.
+
+**Méthodes :**
+
+En programmation orientée objet (POO), une **méthode** est une **routine membre d'une classe**.
+
+Une méthode peut être:
+
+* Une méthode d'instance n'agissant que sur un seul objet (instance de classe) à la fois.
+* Une méthode statique ou méthode de classe, indépendante de toute instance de classe.
+
+En programmation orientée objet, on utilise parfois le terme spécifique d'invocation de méthode pour désigner l'appel d'une telle fonction d'une classe.  
+
+### Indiquer pour chacun des langages suivants les paradigmes utilisés :
+---
+
+* Assembleur  
+    Impératif
+* Logo  
+    Orienté objet
+* CSS  
+    Ce n'est pas un langage (???)
+
+### Sans modifier sa grammaire, comment peut-on intégrer un pradigme à un langage ?
+---
+
+@TODO
+
+### Préparer votre environnement pour TypeScript
+---
+
+>La procédure ci-dessous sera faite pour visual studio code sous linux (popOS!, un dérivé d'ubuntu)
+
+https://code.visualstudio.com/docs/languages/typescript
+
+*installation de node.js*
+
+```Bash
+sudo apt-get install nodejs
+```
+Visual Studio inclus de base le support du langage TypeScript mais le compilateur **tsc**. Il va falloir installer ce dernier, soit de manière globale sur le système ou dans le *workspace* (espace de travail de visual studio).  
+La manière la plus simple d'installer TypeScript est de passer par npm, le **N**ode.js **P**ackage **M**anager.
+
+```Bash
+sudo apt-get install npm
+```
+
+Une fois npm installé, nous pouvons installer npm de manière globale avec le paramètre -g .
+
+```Bash
+sudo npm install -g typescript
+```
+La commande ```tsc --version``` renvoi la version installée sur le système
+```Bash
+alexandremoro@alex-pop-os:~/Cnam$ tsc --version
+Version 3.8.3
+```
+Une autre solution est d'installer le compilateur TypeScript localement dans le projet  ```npm install --save-dev typescript``` afin de ne pas interférer d'autres projets TypeScript.  
+
+![Screenshot](https://i.imgur.com/5dfWfBg.png)
+
+### Allez sur le **Coding Ground** de tutorialpoint.com https://www.tutorialspoint.com/codingground.htm. Essayer le "Hello World" en Scheme, Prolog, SmallTalk et autres langages.
+
+---
+
+* Scheme
+```Scheme
+(display "Hello World")
+(newline)
+```
+>$gosh main.sc  
+Hello World
+
+* Prolog  
+```prolog
+:- initialization(main).
+main :- write('Hello World!').
+```
+>$gprolog --consult-file main.pg
+GNU Prolog 1.4.4 (64 bits)
+Compiled Feb 10 2017, 19:52:45 with gcc
+By Daniel Diaz
+Copyright (C) 1999-2013 Daniel Diaz
+compiling /home/cg/root/3884193/main.pg for byte code...
+/home/cg/root/3884193/main.pg compiled, 2 lines read - 299 bytes written, 7 ms
+Hello World!| ?- 
+* Smalltalk  
+```Smalltalk
+Transcript show: 'Hello, world!'.
+```
+>$gst main.gst  
+Hello, world!
+
+![](https://choualbox.com/Img/138183061693.jpg)
 
 
