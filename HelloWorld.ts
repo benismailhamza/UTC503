@@ -17,3 +17,8 @@ console.log("\nHello Readers,");
 console.log("Thanks for visiting my blog");
 
 console.log(`\t~ ${author.Name}`);
+
+// Second essai :D
+
+let message : string = "Hello World";
+console.log(message);
