@@ -2,11 +2,8 @@
 
 ## UTC503 Exercice 1
 ***
-
 [Page notion.so](https://www.notion.so/alexandremoro/01-Introduction-1f4417afe6b247ce97443d999acb51be)
 
-
-  
 ### Familiarisez-vous avec les notions suivantes :
 ---
 **Instruction:**
@@ -157,8 +154,9 @@ En programmation orientée objet, on utilise parfois le terme spécifique d'invo
 
 ### Sans modifier sa grammaire, comment peut-on intégrer un pradigme à un langage ?
 ---
+>On peut tout a fait rajouter un paradigme à un langage, il nous faudra alors utiliser la grammaire à notre disposition pour créer les modules, fonctions et méthodes nécessaires à son utilisation.
 
-@TODO
+[Exemple : gestion des objets en C](https://www.codementor.io/@michaelsafyan/object-oriented-programming-in-c-du1081gw2)
 
 ### Préparer votre environnement pour TypeScript
 ---
