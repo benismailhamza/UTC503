@@ -21,4 +21,13 @@
 Code
 ```
 Texte  
-Exemple de ```commande``` dans le texte
+Exemple de `commande` dans le texte  
+[lien](www.google.fr)
+* puce
+* pupuce
+* pupupuce
+  ![image](https://i.imgur.com/UBjlQAt.jpg)
+  ______
+  ------
+  ******
+  
