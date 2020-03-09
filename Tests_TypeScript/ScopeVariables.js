@@ -7,8 +7,10 @@ function fn() {
 // Une variable déclarée avec le mot­clé
 // var a une portée équivalente au bloc fonction dans lequel elle a été définie.
 var firstName = "Alexandre";
+var firstName = "toto";
+console.log(firstName);
 if (true) {
-    var firstName = "Rozenn";
+    var firstName = "tata";
     console.log(firstName);
 }
 console.log(firstName);
@@ -24,3 +26,5 @@ if (true) {
 console.log(firstName2);
 // pas d'écrasement
 var firstName3 = "toto";
+// firstName3 = "bidule";
+//Cannot assign to 'firstName3' because it is a constant.ts(2588)

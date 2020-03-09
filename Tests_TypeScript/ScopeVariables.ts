@@ -10,8 +10,11 @@ function fn() {
 
 var firstName = "Alexandre";
 
+var firstName = "toto";
+console.log(firstName);
+
 if (true) {
-    var firstName = "Rozenn";
+    var firstName = "tata";
     console.log(firstName);
 }
 
