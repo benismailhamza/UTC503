@@ -22,3 +22,8 @@ console.log(`\t~ ${author.Name}`);
 
 let message : string = "Hello World";
 console.log(message);
+
+// simple
+
+const hello: string = "Hello World simple";
+console.log(hello);

@@ -14,3 +14,6 @@ console.log("\t~ " + author.Name);
 // Second essai :D
 var message = "Hello World";
 console.log(message);
+// simple
+var hello = "Hello World simple";
+console.log(hello);
