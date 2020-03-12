@@ -1,22 +1,20 @@
 #include <stdio.h>
 
 int main(void) {
+    
     int n = 5;
-    int factorielle = 0;
-
+    int factorielle = n;
+    int saut = n;
+    
     // factorielle de N = N * (N - 1) * (N - 2) * ( N - i) * ... 1
 
 boucle:
 
-    if (n > 1 ) {
-
-        factorielle = n * (n - 1);
-        n--;
-
-        if (n = 1) {
-            goto fin;
-        }
-
+    if ( saut > 1 ) {
+        
+        factorielle = factorielle * (saut - 1);
+        saut--;
+        
         goto boucle;
 
     }
