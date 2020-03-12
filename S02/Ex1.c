@@ -5,8 +5,6 @@ int main(void) {
     int n = 5;
     int factorielle = n;
     int saut = n;
-    
-    // factorielle de N = N * (N - 1) * (N - 2) * ( N - i) * ... 1
 
 boucle:
 
